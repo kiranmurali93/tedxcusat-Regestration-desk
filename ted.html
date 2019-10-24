@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome window</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!--SCRIPTS *************************************************** -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyACYpVnmG2m9YQtIG82mWNh6WJV_49J7kw",
+            authDomain: "tedx-a0b18.firebaseapp.com",
+            databaseURL: "https://tedx-a0b18.firebaseio.com",
+            projectId: "tedx-a0b18",
+            storageBucket: "tedx-a0b18.appspot.com",
+            messagingSenderId: "208199290171",
+            appId: "1:208199290171:web:632764dead049e8f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+     <div class="video-container">
+         
+        <video autoplay muted loop id="myVideo">
+                    <source src="bg.mp4" type="video/mp4">
+            </video>
+     </div>
+    
+    <div class="container">
+        <div class="box">
+            <div class="hello">
+                Hey There
+            </div>
+            <div class="name" id="name">
+                RAMYA RAMACHADRAM
+                <h5>
+                        Welcome To <strong>TEDx CUSAT</strong>
+                    </h5>
+            </div>
+            <div class="welcome">
+                    
+                </div>
+            
+            <h1 class="x_h1">X</h1>
+            <div class="seatno">
+                    <h3 class="seath3" id="seat">D6</h3>
+            </div>
+            <div class="comment">
+                We wish you a Un-Quintessential experience.
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+<style>
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+
+.box
+{   
+    width: 400px;
+    
+    max-height: 700px;
+    background-color: #FF4040;
+    margin: auto;
+    box-shadow: 0 62px 90px rgba(0, 0, 0, 0.438);
+    transform: translate(0,10vh);
+    border-radius:30px;
+}
+.hello{
+
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+    padding-top: 50px;
+}
+.name h5{
+    font-weight: 300;
+}
+.name
+{
+    width: 100%;
+    height: 90px;
+    font-size: 1.7em;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    transform: translate(0,-50px)
+}
+.x{
+    width: 100%;
+    
+    background-color: bisque;
+}
+.x_h1
+{
+    font-size: 19em;
+    transform: translate(0,-290px);
+    text-align: center;
+    color: white;
+}
+.seatno
+{
+    width: 120px;
+    height: 50px;
+    transform: translate(140px,-530px);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 2em;
+}
+.seath3
+{
+    color:#FF4040;
+    height: 100px;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+.comment{
+    transform: translate(0,-500px);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 1vw;
+}
+
+#myVideo {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-width: 100;
+    height: 100%;
+    
+    background-color: black;
+    transform: translate(-50%,0) scale(1.1);
+
+}
+</style>
